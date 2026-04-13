@@ -219,48 +219,10 @@ Foram comparados os seguintes algoritmos:
 
 ### Fluxo geral
 
-![Pipeline CardioIA](imagens/cardioia_pipeline.png)
+<!--[Pipeline CardioIA](imagens/cardioia_pipeline.png)-->
+![Pipeline do Sistema CardioIA](imagens/pipeline_cardioia.png)
 
-## Arquitetura do Projeto (Pipeline CardioIA)
 
-O sistema utiliza uma abordagem de Inteligência Artificial Híbrida, processando a linguagem natural para extrair sintomas e ramificando a análise em dois motores: um sistema baseado em conhecimento e um pipeline de Machine Learning tradicional.
-
-```mermaid
-graph TD
-    %% Cores e Estilos
-    classDef entrada fill:#2c3e50,stroke:#34495e,stroke-width:2px,color:#fff;
-    classDef nlp fill:#8e44ad,stroke:#9b59b6,stroke-width:2px,color:#fff;
-    classDef regras fill:#27ae60,stroke:#2ecc71,stroke-width:2px,color:#fff;
-    classDef ml fill:#2980b9,stroke:#3498db,stroke-width:2px,color:#fff;
-    classDef saida fill:#c0392b,stroke:#e74c3c,stroke-width:2px,color:#fff;
-
-    subgraph Fase 1: Ingestão de Dados
-        A[Leitura de Frases .txt]:::entrada
-    end
-
-    subgraph Fase 2: Processamento de Linguagem Natural
-        B[Extração de Sintomas NLP]:::nlp
-        A --> B
-    end
-
-    subgraph Fase 3A: Sistema Baseado em Conhecimento
-        B -->|Mapeamento| C[Mapa de Conhecimento <br> Sintomas -> Doenças]:::regras
-        C --> D[Diagnóstico Sugerido]:::regras
-    end
-
-    subgraph Fase 3B: Pipeline de Machine Learning
-        B -->|Transformação| E[Vetorização TF-IDF]:::ml
-        E --> F[Treinamento de Modelos <br> LR, NB, SVM, RF]:::ml
-        F --> G[Avaliação de Métricas <br> Accuracy, Precision, Recall, F1]:::ml
-        G --> H[Seleção do Melhor Modelo]:::ml
-    end
-
-    subgraph Fase 4: Decisão e Resultado Final
-        D --> I{Motor de Agregação / Ensamble}:::saida
-        H -->|Predição do Modelo| I
-        I --> J[Classificação de Risco <br> Alto / Baixo]:::saida
-        J --> K([Resultado Final]):::saida
-    end
 
 ### Acesso ao notebook
 
