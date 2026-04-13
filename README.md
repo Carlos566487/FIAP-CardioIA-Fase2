@@ -219,9 +219,7 @@ Foram comparados os seguintes algoritmos:
 
 ### Fluxo geral
 
-<!--[Pipeline CardioIA](imagens/cardioia_pipeline.png)-->
-![Pipeline do Sistema CardioIA](imagens/pipeline_cardioia_risco_clinico.png)
-
+![Pipeline do Sistema CardioIA](imagens/pipeline_risco_clinico.png)
 
 ### Acesso ao notebook
 
