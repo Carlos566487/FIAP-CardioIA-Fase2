@@ -6,7 +6,9 @@
 
 <br>
 ---
-# CardioIA — Diagnóstico Automatizado com Inteligência Artificial
+
+
+## CardioIA — Diagnóstico Automatizado com Inteligência Artificial
 
 **FIAP • Fase 2 — Início da IA Avançada: Automação Robótica, Sinapses Artificiais e Computação Quântica**  
 **Capítulo 1 — Desafio Integrador: IA entre Robôs, Sinapses e Medicina**
