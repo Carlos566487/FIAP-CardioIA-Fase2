@@ -256,21 +256,22 @@ jupyter notebook codigo/classificador_risco.ipynb
 
 ```text
 cardioia-diagnostico-automatizado/
+│
+├── codigo/
+│   ├── extracao_sintomas.ipynb        # NLP: extração de sintomas a partir de texto
+│   └── classificador_risco.ipynb      # Machine Learning: classificação de risco clínico
+│
 ├── dados/
-│   ├── frases_sintomas.txt
-│   ├── mapa_sintomas_doencas.csv
-│   └── dataset_risco.csv
-├── notebooks/
-│   ├── extracao_sintomas.ipynb
-│   └── classificador_risco.ipynb
-├── docs/
-├── assets/
-│   └── imagens/
-│       ├── matriz_confusao.png
-│       └── cardioia_pipeline.png
-├── requirements.txt
-└── README.md
-```
+│   ├── frases_sintomas.txt            # Relatos simulados de sintomas
+│   ├── mapa_sintomas_doencas.csv      # Mapa de conhecimento (Sintoma → Doença)
+│   └── dataset_risco.csv              # Dataset rotulado para classificação de risco
+│
+├── imagens/
+│   ├── cardioia_pipeline.png          # Pipeline do sistema CardioIA
+│   └── matriz_confusao.png            # Matriz de confusão dos modelos
+│
+├── README.md                         # Documentação principal do projeto
+└── .gitignore                        # Arquivos ignorados pelo Git
 
 ---
 
