@@ -1,7 +1,11 @@
+# FIAP - Faculdade de Informática e Administração Paulista
+
 <p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Fiap-logo-novo.jpg" alt="FIAP Logo" width="650"/>
+<a href= "https://www.fiap.com.br/"><img src="assets/logo-fiap.png" alt="FIAP - Faculdade de Informática e Admnistração Paulista" border="0" width=40% height=40%></a>
 </p>
 
+<br>
+---
 # CardioIA — Diagnóstico Automatizado com Inteligência Artificial
 
 **FIAP • Fase 2 — Início da IA Avançada: Automação Robótica, Sinapses Artificiais e Computação Quântica**  
