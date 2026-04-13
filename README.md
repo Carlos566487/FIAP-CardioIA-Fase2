@@ -214,7 +214,7 @@ Foram comparados os seguintes algoritmos:
 
 ### Fluxo geral
 
-!imagens/cardioia_pipeline.png
+![Pipeline CardioIA](imagens/cardioia_pipeline.png)
 
 ### Acesso ao notebook
 
