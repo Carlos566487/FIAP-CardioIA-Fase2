@@ -16,6 +16,21 @@
 > Projeto acadêmico desenvolvido com foco na simulação de sistemas inteligentes de apoio ao diagnóstico médico, aplicando Processamento de Linguagem Natural (NLP) e Machine Learning ao contexto da cardiologia.
 
 ---
+## EQUIPE FIAP 
+## 👨‍🎓 Integrantes: 
+
+| Nome | RM | Contribuição |
+|---|---:|---|
+| João | RM565999 | Extração de Sintomas (NLP Simples) |
+| Endrew Alves | RM563646 | Criação dos Dados (Data Designer) |
+| Tayná Esteves | RM562491 | Machine Learning (Classificador de Risco) |
+| Carlos Eduardo | RM566487 | Documentação e Organização (GitHub) |
+
+## 👩‍🏫 Professores:
+### Tutor(a) 
+- <a href="https://www.linkedin.com/company/inova-fusca">Nome do Tutor</a>
+### Coordenador(a)
+- <a href="https://www.linkedin.com/company/inova-fusca">Nome do Coordenador</a>
 
 ## 1. Introdução
 
