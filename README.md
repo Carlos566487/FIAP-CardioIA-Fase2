@@ -261,7 +261,7 @@ cardioia-diagnostico-automatizado/
 │   └── dataset_risco.csv              # Dataset rotulado para classificação de risco
 │
 ├── imagens/
-│   ├── cardioia_pipeline.png          # Pipeline do sistema CardioIA
+│   ├── pipeline_risco_clínico.png     # Pipeline do sistema CardioIA
 │   └── matriz_confusao.png            # Matriz de confusão dos modelos
 │
 ├── README.md                         # Documentação principal do projeto
