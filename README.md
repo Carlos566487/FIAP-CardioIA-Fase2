@@ -11,23 +11,23 @@
 
 ---
 
-## Resumo
+## 1. Introdução
 
-A Inteligência Artificial tem ampliado sua presença na área da saúde, especialmente em tarefas relacionadas à triagem e ao apoio à decisão clínica. Neste projeto, foi desenvolvido o **CardioIA**, uma solução acadêmica que simula, de forma simplificada, a análise textual de sintomas e a classificação de risco clínico.
-
-A proposta integra duas frentes principais: a extração de sintomas a partir de texto livre e a classificação supervisionada de risco com base em exemplos rotulados. Para isso, foram utilizados conceitos de **NLP**, **TF-IDF** e algoritmos de **Machine Learning**, com destaque para o **Linear SVM**, que apresentou o melhor desempenho nos testes realizados.
-
-Além do aspecto técnico, o trabalho também aborda temas relevantes para aplicações em saúde, como qualidade de dados, vieses algorítmicos e limitações de modelos treinados em bases reduzidas.
+Aqui está uma versão **refinada, integrada e com linguagem acadêmica mais robusta**, pensada para causar uma excelente impressão em avaliadores:
 
 ---
 
 ## 1. Introdução
 
-A evolução da Inteligência Artificial tem transformado profundamente os processos de diagnóstico e análise de informações clínicas. Em ambientes médicos modernos, algoritmos já são utilizados como apoio à interpretação de dados e à tomada de decisão, contribuindo para triagens mais ágeis e estruturadas.
+A crescente incorporação da Inteligência Artificial na área da saúde tem promovido avanços significativos nos processos de triagem, diagnóstico e apoio à decisão clínica. Em cenários contemporâneos, sistemas inteligentes são empregados para analisar grandes volumes de dados, identificar padrões relevantes e auxiliar profissionais na tomada de decisões mais rápidas e assertivas, contribuindo diretamente para a eficiência e qualidade dos serviços médicos.
 
-Neste contexto, o projeto **CardioIA — Fase 2** propõe a simulação de um sistema inteligente capaz de automatizar parte do processo de diagnóstico, a partir da análise de descrições textuais de sintomas. O sistema identifica padrões, associa condições clínicas e classifica o nível de risco do paciente.
+Nesse contexto, este trabalho apresenta o desenvolvimento do **CardioIA**, uma solução acadêmica que simula, de forma estruturada e didática, a aplicação de técnicas de Inteligência Artificial no apoio à análise de sintomas e na classificação de risco clínico. A proposta fundamenta-se na integração de métodos de Processamento de Linguagem Natural e algoritmos de aprendizado supervisionado, possibilitando a transformação de dados textuais não estruturados em informações relevantes para suporte à decisão.
 
-A solução demonstra, de maneira didática, como dados não estruturados podem ser transformados em informações úteis por meio de técnicas de Inteligência Artificial, reforçando a importância de bases consistentes, tratamento adequado dos dados e critérios objetivos de avaliação.
+O sistema desenvolvido é composto por duas etapas principais: (i) a extração de sintomas a partir de descrições textuais fornecidas por pacientes, utilizando técnicas de vetorização baseadas em TF-IDF; e (ii) a classificação do nível de risco clínico por meio de modelos de Machine Learning, com destaque para o algoritmo **Linear Support Vector Machine (SVM)**, que apresentou desempenho superior nos experimentos realizados.
+
+Além dos aspectos técnicos, este estudo também aborda questões críticas relacionadas à aplicação de Inteligência Artificial na saúde, incluindo a qualidade e representatividade dos dados, a presença de possíveis vieses algorítmicos e as limitações inerentes a modelos treinados em bases de dados reduzidas. Tais reflexões são fundamentais para a compreensão dos desafios envolvidos na transposição de soluções acadêmicas para contextos reais.
+
+Dessa forma, o projeto CardioIA não apenas demonstra a viabilidade da aplicação de técnicas acessíveis de Inteligência Artificial em cenários simulados, mas também reforça a importância de uma abordagem crítica, ética e orientada a dados no desenvolvimento de sistemas inteligentes voltados à área da saúde.
 
 ---
 
