@@ -13,12 +13,6 @@
 
 ## 1. Introdução
 
-Aqui está uma versão **refinada, integrada e com linguagem acadêmica mais robusta**, pensada para causar uma excelente impressão em avaliadores:
-
----
-
-## 1. Introdução
-
 A crescente incorporação da Inteligência Artificial na área da saúde tem promovido avanços significativos nos processos de triagem, diagnóstico e apoio à decisão clínica. Em cenários contemporâneos, sistemas inteligentes são empregados para analisar grandes volumes de dados, identificar padrões relevantes e auxiliar profissionais na tomada de decisões mais rápidas e assertivas, contribuindo diretamente para a eficiência e qualidade dos serviços médicos.
 
 Nesse contexto, este trabalho apresenta o desenvolvimento do **CardioIA**, uma solução acadêmica que simula, de forma estruturada e didática, a aplicação de técnicas de Inteligência Artificial no apoio à análise de sintomas e na classificação de risco clínico. A proposta fundamenta-se na integração de métodos de Processamento de Linguagem Natural e algoritmos de aprendizado supervisionado, possibilitando a transformação de dados textuais não estruturados em informações relevantes para suporte à decisão.
