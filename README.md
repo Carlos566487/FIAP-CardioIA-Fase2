@@ -1,371 +1,374 @@
-<p align="center"> <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Fiap-logo-novo.jpg" alt="FIAP Logo" width="700"/> </p>
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Fiap-logo-novo.jpg" alt="FIAP Logo" width="650"/>
+</p>
+
+# CardioIA — Diagnóstico Automatizado com Inteligência Artificial
+
+**FIAP • Fase 2 — Início da IA Avançada: Automação Robótica, Sinapses Artificiais e Computação Quântica**  
+**Capítulo 1 — Desafio Integrador: IA entre Robôs, Sinapses e Medicina**
+
+> Projeto acadêmico desenvolvido com foco na simulação de sistemas inteligentes de apoio ao diagnóstico médico, aplicando Processamento de Linguagem Natural (NLP) e Machine Learning ao contexto da cardiologia.
 
 ---
 
-## 🩺 FIAP - CardioIA | Fase 2 - Início da IA avançada: Automação Robótica, Sinapses Artificiais e Computação Quântica
+## Resumo
 
-## Cap 1 - Desafio Integrador: IA entre Robôs, Sinapses e Medicina
+A Inteligência Artificial tem ampliado sua presença na área da saúde, especialmente em tarefas relacionadas à triagem e ao apoio à decisão clínica. Neste projeto, foi desenvolvido o **CardioIA**, uma solução acadêmica que simula, de forma simplificada, a análise textual de sintomas e a classificação de risco clínico.
 
-# 🫀 CardioIA – Diagnóstico Automatizado com Inteligência Artificial
+A proposta integra duas frentes principais: a extração de sintomas a partir de texto livre e a classificação supervisionada de risco com base em exemplos rotulados. Para isso, foram utilizados conceitos de **NLP**, **TF-IDF** e algoritmos de **Machine Learning**, com destaque para o **Linear SVM**, que apresentou o melhor desempenho nos testes realizados.
 
-> Projeto desenvolvido na FIAP com foco na simulação de sistemas inteligentes de apoio ao diagnóstico médico, utilizando NLP e Machine Learning aplicados à cardiologia.
-
----
-## 🧾 Introdução
-
-A evolução da Inteligência Artificial tem transformado profundamente a área da saúde, especialmente nos processos de diagnóstico clínico. Em centros médicos modernos, algoritmos já atuam como verdadeiros **“estetoscópios digitais”**, auxiliando profissionais na interpretação de dados e na tomada de decisão.
-
-Neste contexto, o projeto **CardioIA – Fase 2** propõe a simulação de um sistema inteligente capaz de automatizar, de forma simplificada, parte do processo de diagnóstico médico. A partir da análise de descrições textuais de sintomas, o sistema é capaz de identificar padrões, associar condições clínicas e classificar o nível de risco de pacientes.
-
-O desenvolvimento da solução envolve a aplicação prática de conceitos fundamentais de Inteligência Artificial, com destaque para **Processamento de Linguagem Natural (NLP)** e **Machine Learning**, permitindo transformar dados não estruturados em informações relevantes para apoio à decisão.
-
-Além do aspecto técnico, o projeto também estimula uma visão crítica sobre temas essenciais no uso de IA na saúde, como **qualidade dos dados, vieses algorítmicos e governança de dados**, aproximando os alunos dos desafios reais enfrentados no mercado.
-
-Dessa forma, o CardioIA não se limita a um exercício acadêmico, mas se posiciona como uma experiência prática que demonstra como soluções aparentemente simples, quando bem estruturadas, podem se aproximar de aplicações reais utilizadas em hospitais e centros de diagnóstico.
+Além do aspecto técnico, o trabalho também aborda temas relevantes para aplicações em saúde, como qualidade de dados, vieses algorítmicos e limitações de modelos treinados em bases reduzidas.
 
 ---
 
-## 📌 Objetivo
+## 1. Introdução
 
-Simular a automatização de diagnósticos clínicos por meio de Inteligência Artificial, reproduzindo, de forma simplificada, o funcionamento de sistemas utilizados em hospitais e centros de diagnóstico.
+A evolução da Inteligência Artificial tem transformado profundamente os processos de diagnóstico e análise de informações clínicas. Em ambientes médicos modernos, algoritmos já são utilizados como apoio à interpretação de dados e à tomada de decisão, contribuindo para triagens mais ágeis e estruturadas.
 
-A solução contempla duas frentes principais:
+Neste contexto, o projeto **CardioIA — Fase 2** propõe a simulação de um sistema inteligente capaz de automatizar parte do processo de diagnóstico, a partir da análise de descrições textuais de sintomas. O sistema identifica padrões, associa condições clínicas e classifica o nível de risco do paciente.
 
-* 🔎 **Extração de sintomas (NLP)**
-* 🤖 **Classificação de risco (Machine Learning)**
+A solução demonstra, de maneira didática, como dados não estruturados podem ser transformados em informações úteis por meio de técnicas de Inteligência Artificial, reforçando a importância de bases consistentes, tratamento adequado dos dados e critérios objetivos de avaliação.
 
 ---
 
-### 🔹 Parte 1 - 📊 Criação dos Dados (Data Designer)
+## 2. Objetivos
 
-Nesta etapa, foi construída a base de dados utilizada em todo o projeto, simulando informações clínicas reais de forma estruturada.
+### 2.1 Objetivo geral
+
+Simular a automatização de diagnósticos clínicos por meio de Inteligência Artificial, reproduzindo de forma simplificada o funcionamento de sistemas utilizados em hospitais e centros de diagnóstico.
+
+### 2.2 Objetivos específicos
+
+- Extrair sintomas a partir de textos livres utilizando técnicas simples de NLP.
+- Relacionar sintomas a possíveis doenças com base em um mapa de conhecimento.
+- Classificar o nível de risco clínico por meio de modelos supervisionados de Machine Learning.
+- Avaliar o desempenho dos algoritmos com métricas quantitativas.
+- Estruturar uma documentação acadêmica clara, organizada e visualmente padronizada.
+
+---
+
+## 3. Estrutura da Solução
+
+A solução foi organizada em três etapas complementares:
+
+### 3.1 Criação dos dados
+
+Nesta etapa, foi construída a base de dados utilizada no projeto, simulando informações clínicas reais em formato estruturado.
 
 Foram desenvolvidos:
 
-Arquivo .txt contendo frases com relatos de sintomas de pacientes
-Arquivo .csv com o mapa de conhecimento, relacionando sintomas a possíveis doenças
-Dataset rotulado para classificação de risco clínico
+- arquivo `.txt` contendo frases com relatos de sintomas;
+- arquivo `.csv` com o mapa de conhecimento, relacionando sintomas e doenças;
+- dataset rotulado para classificação de risco clínico.
 
-Essa fase é fundamental, pois a qualidade e organização dos dados impactam diretamente no desempenho dos modelos de Inteligência Artificial.
+Essa fase é essencial, pois a qualidade e a organização dos dados influenciam diretamente o desempenho dos modelos de IA.
 
----
+### 3.2 Extração de sintomas com NLP
 
-### 🔹 Parte 2 -  🔎 Extração de Sintomas (NLP Simples)
-
-Nesta etapa, foi implementado um processo de Processamento de Linguagem Natural (NLP) para interpretar frases escritas por pacientes.
+Nesta etapa, foi implementado um processo de Processamento de Linguagem Natural para interpretar frases escritas por pacientes.
 
 O sistema realiza:
 
-Leitura de textos contendo descrições de sintomas
-Identificação de palavras-chave e expressões relevantes
-Associação dos sintomas com doenças, com base no mapa de conhecimento
+- leitura de textos com descrições de sintomas;
+- identificação de palavras-chave e expressões relevantes;
+- associação dos sintomas com doenças, com base no mapa de conhecimento.
 
 Essa abordagem simula, de forma simplificada, como sistemas inteligentes interpretam linguagem natural para apoiar diagnósticos médicos.
 
----
-
-### 🔹 Parte 3 - 🤖 Machine Learning (Classificador de Risco)
+### 3.3 Classificação de risco com Machine Learning
 
 Nesta fase, foi desenvolvido um modelo de Machine Learning para classificar o nível de risco clínico com base nas descrições textuais.
+
+O pipeline inclui:
+
+- leitura das frases simuladas;
+- vetorização com TF-IDF;
+- treinamento e comparação de modelos;
+- seleção do algoritmo com melhor desempenho;
+- geração da classificação final de risco.
+
 ---
 
-### 📎 Acesso ao Notebook
+## 4. Pipeline de Processamento Inteligente
 
-O desenvolvimento completo pode ser visualizado no notebook abaixo:
+```mermaid
+flowchart LR
+    A[Frases simuladas de pacientes] --> B[Leitura e tratamento textual]
+    B --> C[Extração de sintomas com NLP]
+    C --> D[Mapa de conhecimento]
+    D --> E[Associação sintoma → doença]
+    E --> F[Vetorização TF-IDF]
+    F --> G[Treinamento dos modelos]
+    G --> H[Avaliação de desempenho]
+    H --> I[Seleção do melhor modelo]
+    I --> J[Classificação de risco]
+```
 
-👉 [Abrir classificador_risco.ipynb](./classificador_risco.ipynb)
+### Etapas do pipeline
+
+1. Leitura de frases simuladas de pacientes (`.txt`)
+2. Identificação de sintomas por palavras-chave
+3. Associação dos sintomas a possíveis doenças via mapa de conhecimento (`.csv`)
+4. Vetorização das frases com TF-IDF
+5. Treinamento dos modelos de classificação
+6. Avaliação com métricas de desempenho
+7. Seleção do modelo mais eficiente
+8. Geração da classificação de risco
 
 ---
 
-O processo inclui:
+## 5. Metodologia
 
-## ⚙️ Pipeline de Processamento Inteligente
+A metodologia adotada seguiu as seguintes etapas:
 
-* Leitura de frases simuladas de pacientes (`.txt`)
-* Identificação de sintomas por palavras-chave (NLP)
-* Associação dos sintomas a possíveis doenças via mapa de conhecimento (`.csv`)
-* Vetorização das frases utilizando TF-IDF
-* Treinamento de modelos de classificação (Logistic Regression, Naive Bayes, SVM e Random Forest)
-* Avaliação dos modelos com métricas (acurácia, precisão, recall e F1-score)
-* Seleção do modelo mais eficiente para predição de risco
-* Geração de diagnóstico sugerido e classificação de risco (alto ou baixo)
+1. Leitura do dataset  
+2. Análise exploratória  
+3. Separação das variáveis independentes e dependentes (`X` e `y`)  
+4. Vetorização com TF-IDF  
+5. Divisão treino/teste em proporção 80/20  
+6. Treinamento dos modelos  
+7. Avaliação do desempenho  
+8. Seleção do melhor modelo  
+9. Testes com novas frases  
 
-O modelo final é capaz de classificar automaticamente novas frases como alto risco ou baixo risco, simulando sistemas de triagem utilizados na área da saúde.
+---
 
-## 🔄 Pipeline do CardioIA
+## 6. Dataset
+
+| Frase | Situação |
+|---|---|
+| "dor no peito e falta de ar" | alto risco |
+| "leve incômodo nas costas" | baixo risco |
+
+**Total de registros:** 20
+
+---
+
+## 7. Vetorização com TF-IDF
+
+A representação textual foi convertida em formato numérico por meio de TF-IDF, com as seguintes configurações:
+
+- conversão para minúsculas;
+- remoção de acentos;
+- uso de unigramas e bigramas.
+
+---
+
+## 8. Modelos Avaliados
+
+Foram comparados os seguintes algoritmos:
+
+- Logistic Regression
+- Naive Bayes
+- Linear SVM
+- Random Forest
+
+---
+
+## 9. Resultados
+
+| Modelo | Acurácia | F1-score |
+|---|---:|---:|
+| **Linear SVM** | **1.00** | **1.00** |
+| Logistic Regression | 0.75 | 0.73 |
+| Naive Bayes | 0.75 | 0.73 |
+| Random Forest | 0.75 | 0.73 |
+
+**Modelo selecionado:** **Linear SVM**
+
+---
+
+## 10. Exemplos de Teste
+
+### Entrada
+> "dor intensa no peito e falta de ar"
+
+### Saída
+> **Alto risco**
+
+### Outros exemplos
+
+- "cansaço leve e tontura" → **Baixo risco**
+- "palpitação e suor frio" → **Alto risco**
+
+---
+
+## 11. Limitações
+
+- Dataset pequeno.
+- Possibilidade de overfitting.
+- TF-IDF não captura contexto profundo.
+
+---
+
+## 12. Evoluções Futuras
+
+- Uso de modelos como BERT.
+- Ampliação da base de dados.
+- Aplicação de redes neurais.
+- Implementação de validação cruzada.
+
+---
+
+## 13. Visualização do Projeto
+
+### Fluxo geral
 
 ![Pipeline CardioIA](./assets/imagens/cardioia_pipeline.png)
 
-📌 **Exemplo:**
+### Acesso ao notebook
 
-**Entrada:**
+O desenvolvimento completo pode ser consultado no notebook abaixo:
 
-> "Estou com dor no peito e falta de ar há dois dias"
-
-**Saída:**
-
-> Diagnóstico sugerido: Infarto
+👉 [Abrir `classificador_risco.ipynb`](./classificador_risco.ipynb)
 
 ---
 
-### ⚙️ Metodologia
+## 14. Como Executar
 
-1. Leitura do dataset
-2. Análise exploratória
-3. Separação de variáveis (X e y)
-4. Vetorização com TF-IDF
-5. Divisão treino/teste (80/20)
-6. Treinamento de modelos
-7. Avaliação de desempenho
-8. Seleção do melhor modelo
-9. Testes com novas frases
+### Instalação
 
----
-
-### 🧪 Dataset
-
-| frase                        | situacao    |
-| ---------------------------- | ----------- |
-| "dor no peito e falta de ar" | alto risco  |
-| "leve incômodo nas costas"   | baixo risco |
-
-📊 Total: **20 registros**
-
----
-
-### 🔍 Vetorização (TF-IDF)
-
-* Conversão para minúsculas
-* Remoção de acentos
-* Uso de **unigramas e bigramas**
-
----
-
-### 🤖 Modelos Avaliados
-
-* Logistic Regression
-* Naive Bayes
-* Linear SVM
-* Random Forest
-
----
-
-### 📊 Resultados
-
-| Modelo              | Acurácia | F1-score |
-| ------------------- | -------- | -------- |
-| 🥇 Linear SVM       | **1.00** | **1.00** |
-| Logistic Regression | 0.75     | 0.73     |
-| Naive Bayes         | 0.75     | 0.73     |
-| Random Forest       | 0.75     | 0.73     |
-
-📌 **Modelo selecionado:** Linear SVM
-
----
-
-### 🚀 Testes
-
-**Entrada:**
-
-> "dor intensa no peito e falta de ar"
-
-**Saída:**
-
-> 🔴 Alto risco
-
-**Outros exemplos:**
-
-* "cansaço leve e tontura" → 🟢 Baixo risco
-* "palpitação e suor frio" → 🔴 Alto risco
-
----
-
-### ⚠️ Limitações
-
-* Dataset pequeno
-* Possível overfitting
-* TF-IDF não captura contexto profundo
-
----
-
-### 🔮 Evoluções Futuras
-
-* Uso de modelos como BERT
-* Bases de dados maiores
-* Redes neurais
-* Validação cruzada
-
----
-
-## ⚙️ Como Executar
-
-### 🔧 Instalação
-
-```bash id="6bg9my"
+```bash
 pip install pandas scikit-learn jupyter
 ```
 
----
+### Executar a etapa de NLP
 
-### ▶️ Rodar NLP
-
-```bash id="iv8hws"
+```bash
 jupyter notebook codigo/extracao_sintomas.ipynb
 ```
 
----
+### Executar a etapa de Machine Learning
 
-### ▶️ Rodar Machine Learning
-
-```bash id="txq2xg"
+```bash
 jupyter notebook codigo/classificador_risco.ipynb
 ```
 
 ---
 
-## 🎥 Vídeo de Demonstração
+## 15. Estrutura do Projeto
 
-🔗 **Link:**
-👉 *[INSERIR LINK DO YOUTUBE AQUI]*
-
----
-
-## 📁 Estrutura do Projeto
-
-```
+```text
 cardioia-diagnostico-automatizado/
-│
 ├── dados/
-│   ├── frases_sintomas.txt          # 10 relatos reais de pacientes para teste
-│   ├── mapa_sintomas_doencas.csv    # Mapa de conhecimento (Sintoma -> Doença)
-│   └── dataset_risco.csv            # Base rotulada para treino do modelo de ML
-│
+│   ├── frases_sintomas.txt
+│   ├── mapa_sintomas_doencas.csv
+│   └── dataset_risco.csv
 ├── notebooks/
-│   ├── extracao_sintomas.ipynb      # Parte 1: Script de extração e lógica de busca
-│   └── classificador_risco.ipynb    # Parte 2: Treinamento e avaliação do modelo ML
-│
-├── docs/                            # Documentação adicional e imagens
-├── requirements.txt                 # Dependências do projeto
+│   ├── extracao_sintomas.ipynb
+│   └── classificador_risco.ipynb
+├── docs/
+├── assets/
+│   └── imagens/
+│       ├── matriz_confusao.png
+│       └── cardioia_pipeline.png
+├── requirements.txt
 └── README.md
-│
-└── images/
-      └── matriz_confusao.png
-      └── cardioia_pipeline.png
----
-
-### 🔬 Conclusão
-
-Este projeto demonstrou a aplicação de técnicas de Processamento de Linguagem Natural (NLP) e Machine Learning na classificação de risco clínico a partir de descrições textuais de sintomas.
-
-A utilização de vetorização TF-IDF (com unigramas e bigramas) permitiu a transformação eficiente dos dados textuais em representações numéricas, viabilizando o treinamento de modelos supervisionados. Entre os algoritmos avaliados, o modelo **Linear SVM** apresentou o melhor desempenho, destacando-se pelo equilíbrio entre precisão e recall.
-
-Os resultados, incluindo a análise da matriz de confusão, evidenciaram a capacidade do modelo em distinguir adequadamente entre diferentes níveis de risco, com baixa taxa de erro no conjunto avaliado.
-
-Entretanto, limitações como o tamanho reduzido da base de dados e a ausência de modelagem semântica mais profunda indicam oportunidades de melhoria. Como trabalhos futuros, recomenda-se a utilização de bases mais robustas e a adoção de técnicas mais avançadas, como modelos baseados em embeddings e redes neurais.
-
-De forma geral, o estudo valida a viabilidade do uso de abordagens baseadas em NLP e Machine Learning para apoio à classificação de risco em cenários simulados da área da saúde.
----
-
-## 👥 Integrantes
-
-| Nome            | RM       | Parte no Projeto                              |
-|-----------------|----------|-----------------------------------------------|
-| João            | RM565999 | Extração de Sintomas (NLP Simples)            |
-| Endrew Alves    | RM563646 | Criação dos Dados (Data Designer)             |
-| Tayná Esteves   | RM562491 | Machine Learning (Classificador)              |
-| Carlos Eduardo  | RM566487 | Documentação e Organização (GitHub)           |
+```
 
 ---
 
-# 👥 Organização da Equipe
+## 16. Conclusão
+
+Este projeto demonstrou a aplicação de técnicas de Processamento de Linguagem Natural e Machine Learning na classificação de risco clínico a partir de descrições textuais de sintomas.
+
+A vetorização TF-IDF, com unigramas e bigramas, permitiu transformar os dados textuais em representações numéricas adequadas ao treinamento de modelos supervisionados. Entre os algoritmos avaliados, o **Linear SVM** apresentou o melhor desempenho, com equilíbrio entre precisão e recall.
+
+Os resultados evidenciam a capacidade do modelo em distinguir diferentes níveis de risco com baixa taxa de erro no conjunto avaliado. Ainda assim, limitações como o tamanho reduzido da base e a ausência de modelagem semântica mais profunda indicam oportunidades de melhoria.
+
+Como evolução futura, recomenda-se o uso de bases mais robustas e técnicas avançadas, como embeddings e redes neurais, ampliando o potencial da solução em cenários mais próximos da realidade.
+
+---
+
+## 17. Integrantes
+
+| Nome | RM | Contribuição |
+|---|---:|---|
+| João | RM565999 | Extração de Sintomas (NLP Simples) |
+| Endrew Alves | RM563646 | Criação dos Dados (Data Designer) |
+| Tayná Esteves | RM562491 | Machine Learning (Classificador de Risco) |
+| Carlos Eduardo | RM566487 | Documentação e Organização (GitHub) |
+
+---
+
+## 18. Organização da Equipe
 
 O desenvolvimento do projeto **CardioIA** foi estruturado em etapas, com responsabilidades bem definidas entre os integrantes, seguindo uma abordagem colaborativa.
 
----
+### 18.1 Divisão de papéis
 
-## 🧩 Divisão de Papéis
-
-### 👤 Endrew Alves — Criação dos Dados (Data Designer)
+#### Endrew Alves — Criação dos Dados (Data Designer)
 
 Responsável pela construção e organização da base de dados do projeto.
 
-- Criação das frases simulando relatos de pacientes  
-- Estruturação do mapa de conhecimento (sintomas → doenças)  
-- Montagem do dataset para classificação de risco  
+- Criação das frases simulando relatos de pacientes
+- Estruturação do mapa de conhecimento (sintomas → doenças)
+- Montagem do dataset para classificação de risco
 
----
-
-### 👤 João — Extração de Sintomas (NLP Simples)
+#### João — Extração de Sintomas (NLP Simples)
 
 Responsável pela implementação da lógica de interpretação textual.
 
-- Leitura das frases de entrada  
-- Identificação de sintomas por palavras-chave  
-- Associação com possíveis diagnósticos  
+- Leitura das frases de entrada
+- Identificação de sintomas por palavras-chave
+- Associação com possíveis diagnósticos
 
----
-
-### 👤 Tayná Esteves — Machine Learning (Classificador)
+#### Tayná Esteves — Machine Learning (Classificador)
 
 Responsável pelo desenvolvimento do modelo de classificação de risco.
 
-- Vetorização com TF-IDF  
-- Treinamento dos modelos de Machine Learning  
-- Avaliação de desempenho  
-- Seleção do melhor modelo  
+- Vetorização com TF-IDF
+- Treinamento dos modelos de Machine Learning
+- Avaliação de desempenho
+- Seleção do melhor modelo
 
----
+#### Carlos Eduardo — Documentação e GitHub
 
-### 👤 Carlos Eduardo — Documentação e GitHub
+Responsável pela organização final do projeto e pela entrega.
 
-Responsável pela organização final do projeto e entrega.
+- Estruturação do repositório no GitHub
+- Criação e padronização do README.md
+- Documentação técnica e explicativa
+- Produção do vídeo demonstrativo
 
-- Estruturação do repositório no GitHub  
-- Criação e padronização do README.md  
-- Documentação técnica e explicativa  
-- Produção do vídeo demonstrativo  
+### 18.2 Metodologia de trabalho
 
----
+A equipe seguiu uma abordagem baseada em divisão modular, na qual cada integrante foi responsável por uma etapa específica do pipeline de Inteligência Artificial, garantindo:
 
-## 🤝 Metodologia de Trabalho
-
-A equipe seguiu uma abordagem baseada em divisão modular, onde cada integrante foi responsável por uma etapa específica do pipeline de Inteligência Artificial, garantindo:
-
-- Organização do desenvolvimento  
-- Clareza nas responsabilidades  
-- Integração eficiente entre as etapas  
+- organização do desenvolvimento;
+- clareza nas responsabilidades;
+- integração eficiente entre as etapas.
 
 Essa estrutura permitiu a construção de uma solução coesa, simulando o funcionamento de projetos reais na área de tecnologia e saúde.
 
 ---
 
+## 19. Diferenciais
 
-## 🚀 Diferenciais
-
-* Simulação de diagnóstico com IA
-* Uso de NLP aplicado à saúde
-* Classificação de risco automatizada
-* Estrutura pronta para evolução
-
----
-
-## 📚 Considerações Finais
-
-O projeto demonstra como técnicas acessíveis de Inteligência Artificial podem ser aplicadas na área da saúde, auxiliando na triagem e apoio à decisão clínica.
-
-Mais do que um exercício acadêmico, o CardioIA representa uma base sólida para aplicações reais em sistemas inteligentes de diagnóstico.
+- Simulação de diagnóstico com IA
+- Uso de NLP aplicado à saúde
+- Classificação de risco automatizada
+- Estrutura pronta para evolução
 
 ---
 
-📌 *Projeto desenvolvido para a Fase 2 do PBL – CardioIA (FIAP).*
+## 20. Vídeo de Demonstração
 
+**Link:** _inserir link do YouTube aqui_
 
 ---
 
-# 🏫 Instituição
+## 21. Considerações Finais
 
-**FIAP — Faculdade de Informática e Administração Paulista**
+O projeto demonstra como técnicas acessíveis de Inteligência Artificial podem ser aplicadas à área da saúde, auxiliando na triagem e no apoio à decisão clínica.
 
-Projeto acadêmico desenvolvido no contexto da disciplina de Inteligência Artificial aplicada a dados.
+Mais do que um exercício acadêmico, o **CardioIA** representa uma base sólida para aplicações futuras em sistemas inteligentes de diagnóstico.
 
-Ano: **2026**
+---
+
+## 22. Instituição
+
+**FIAP — Faculdade de Informática e Administração Paulista**  
+Projeto acadêmico desenvolvido no contexto da disciplina de Inteligência Artificial aplicada a dados.  
+
+**Ano:** 2026
