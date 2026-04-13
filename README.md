@@ -272,7 +272,7 @@ cardioia-diagnostico-automatizado/
 │
 ├── README.md                         # Documentação principal do projeto
 └── .gitignore                        # Arquivos ignorados pelo Git
-
+```
 ---
 
 ## 16. Conclusão
