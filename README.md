@@ -215,9 +215,8 @@ Foram comparados os seguintes algoritmos:
 
 ![Pipeline do Sistema CardioIA](imagens/pipeline_risco_clínico.png)
 
-### Acesso ao notebook
-
-O desenvolvimento completo pode ser consultado no notebook abaixo:
+## Acesso ao notebook
+> O desenvolvimento completo pode ser consultado no notebook abaixo:
 
 👉 [📊 Notebook - Classificação de Risco Clínico](codigo/classificador_risco.ipynb)
 
