@@ -58,11 +58,11 @@ Nesta etapa, foi construída a base de dados utilizada no projeto, simulando inf
 Foram desenvolvidos os seguintes artefatos de dados:
 
 1. 📄 [Relatos de sintomas em formato textual](dados/frases_sintomas.txt)
-        arquivo `.txt` contendo frases com relatos de sintomas.
+   - arquivo `.txt` contendo frases com relatos de sintomas.
 3. 📊 [Mapa de conhecimento (sintomas e doenças)](dados/mapa_sintomas_doencas.csv)
-        arquivo `.csv` com o mapa de conhecimento, relacionando sintomas e doenças.
-4. 🤖 [Dataset rotulado para classificação de risco clínico](dados/dataset_risco.csv)
-        dataset rotulado para classificação de risco clínico.
+   - arquivo `.csv` com o mapa de conhecimento, relacionando sintomas e doenças.
+5. 🤖 [Dataset rotulado para classificação de risco clínico](dados/dataset_risco.csv)
+   - dataset rotulado para classificação de risco clínico.
 
 ---
 
