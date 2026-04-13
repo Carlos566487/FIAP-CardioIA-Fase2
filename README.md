@@ -220,7 +220,8 @@ Foram comparados os seguintes algoritmos:
 
 O desenvolvimento completo pode ser consultado no notebook abaixo:
 
-👉 [Abrir `classificador_risco.ipynb`](./classificador_risco.ipynb)
+👉 [📊 Notebook - Classificação de Risco Clínico](codigo/classificador_risco.ipynb)
+
 
 ---
 
