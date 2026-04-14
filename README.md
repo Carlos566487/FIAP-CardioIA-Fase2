@@ -90,10 +90,13 @@ cardioia-diagnostico-automatizado/
 
 ## 4. Como Executar
 
-### Instalação
+### Instalação (Provisionamento do Ambiente)
 
 ```bash
 pip install pandas scikit-learn jupyter
+```
+```bash
+pip install pandas matplotlib scikit-learn jupyter
 ```
 
 ### 4.1 Executar a etapa de NLP
