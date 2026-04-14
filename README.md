@@ -73,15 +73,17 @@ cardioia-diagnostico-automatizado/
 
 ![Pipeline do Sistema CardioIA](imagens/pipeline_risco_clínico.png)
 
+
 ### 3.2 Acesso ao notebook
 > O desenvolvimento completo pode ser consultado no notebook abaixo:
-
 👉 [📊 Notebook - Classificação de Risco Clínico](codigo/classificador_risco.ipynb)
 
-### 3.3 Vídeo de Demonstração
 
-**Link:** _inserir link do YouTube aqui_
+
+### 3.3 Vídeo de Demonstração
+>**Link:** _inserir link do YouTube aqui_
 ---
+
 
 ## 4. Como Executar
 
