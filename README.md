@@ -265,6 +265,8 @@ Foram comparados os seguintes algoritmos:
 | Naive Bayes | 0.75 | 0.73 |
 | Random Forest | 0.75 | 0.73 |
 
+> O desempenho ideal apresentado pelo modelo Linear SVM (acurácia de 1.00) pode ser explicado pelo reduzido volume e pela simplicidade estrutural do dataset, que possibilitam uma separação linear praticamente perfeita entre as classes. Todavia, tal resultado deve ser interpretado com cautela, uma vez que pode indicar sobreajuste (overfitting) e não necessariamente garantir a robustez do modelo em cenários reais mais complexos.
+
 **Modelo selecionado:** **Linear SVM**
 
 ---
