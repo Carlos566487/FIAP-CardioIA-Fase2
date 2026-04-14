@@ -88,6 +88,8 @@ cardioia-diagnostico-automatizado/
 
 > [![Assista ao vídeo](https://img.youtube.com/vi/x19QciQ_vaQ/0.jpg)](https://youtu.be/x19QciQ_vaQ)
 
+>[Acessar vídeo no YouTube](https://youtu.be/x19QciQ_vaQ)
+
 ---
 
 ## 4. Como Executar
