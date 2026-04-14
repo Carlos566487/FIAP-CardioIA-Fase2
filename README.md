@@ -77,6 +77,7 @@ cardioia-diagnostico-automatizado/
 
 ## 3.2 Acesso ao notebook
 > O desenvolvimento completo pode ser consultado no notebook abaixo:
+
 👉 [📊 Notebook - Classificação de Risco Clínico](codigo/classificador_risco.ipynb)
 
 ---
