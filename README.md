@@ -83,8 +83,8 @@ cardioia-diagnostico-automatizado/
 
 ---
 
-## 3.3 Vídeo de Demonstração
->**Link:** _inserir link do YouTube aqui_
+## 3.3 Vídeo de apresentação do sistema
+[![Assista ao vídeo](https://img.youtube.com/vi/x19QciQ_vaQ/0.jpg)](https://youtu.be/x19QciQ_vaQ)
 
 ---
 
