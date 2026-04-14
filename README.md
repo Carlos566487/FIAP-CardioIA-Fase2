@@ -28,7 +28,7 @@
 
 ## 👩‍🏫 Professores:
 ### Tutor(a) 
-- <a href="https://www.linkedin.com/company/inova-fusca">ANDRÉ GODOI CHIOVATO</a>
+- <a href="https://www.linkedin.com/in/john-paul-lima/">JOHN PAUL LIMA</a>
 ### Coordenador(a)
 - <a href="https://www.linkedin.com/in/andregodoichiovato/">ANDRÉ GODOI CHIOVATO</a>
 
